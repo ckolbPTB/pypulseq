@@ -55,7 +55,7 @@ def split_gradient_at(
 
     time_index = round(time_point / grad_raster_time)
     # Work around floating-point arithmetic limitation
-    time_point = round(time_index * grad_raster_time, 6)
+    time_point = round(time_index * grad_raster_time, 7)
     channel = grad.channel
 
     if grad.type == 'grad':
